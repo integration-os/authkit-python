@@ -1,11 +1,11 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="integrationos-authkit",
-    version="0.1.0",
+    version="1.0.0",
     author="IntegrationOS",
     author_email="dev@integrationos.com",
     description="Secure token generation for IntegrationOS AuthKit in Python",

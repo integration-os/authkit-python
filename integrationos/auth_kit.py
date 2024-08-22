@@ -10,18 +10,11 @@ class AuthKit:
 
     def _get_url(self, type: str) -> str:
         services_url = self.configs.get("base_url", "https://api.integrationos.com")
-        
-        if "localhost" in services_url:
-            api_url = "http://localhost:3005"
-        elif "development" in services_url:
-            api_url = "https://development-api.integrationos.com"
-        else:
-            api_url = "https://api.integrationos.com"
 
         urls = {
             "get_settings": f"{services_url}/internal/v1/settings/get",
             "create_event_link": f"{services_url}/internal/v1/event-links/create",
-            "get_connection_definitions": f"{api_url}/v1/public/connection-definitions?limit=100",
+            "get_connection_definitions": f"{services_url}/v1/public/connection-definitions?limit=100",
             "create_embed_token": f"{services_url}/internal/v1/embed-tokens/create",
             "get_session_id": f"{services_url}/v1/public/generate-id/session_id",
         }
