@@ -2,7 +2,7 @@ import time
 import requests
 from typing import Dict, List, Union
 
-class AuthKit:
+class AuthKitToken:
     def __init__(self, secret: str, configs: Dict = None):
         self.secret = secret
         self.configs = configs or {}

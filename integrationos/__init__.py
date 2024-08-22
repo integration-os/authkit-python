@@ -1,5 +1,5 @@
-from .auth_kit import AuthKit
+from .auth_kit import AuthKitToken
 
-__all__ = ['AuthKit']
+__all__ = ['AuthKitToken']
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
