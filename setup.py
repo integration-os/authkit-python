@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="integrationos-authkit",
-    version="1.0.1",
+    version="1.1.0",
     author="IntegrationOS",
     author_email="dev@integrationos.com",
     description="Secure token generation for IntegrationOS AuthKit in Python",
