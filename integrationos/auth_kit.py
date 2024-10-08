@@ -62,8 +62,10 @@ class AuthKitToken:
                 "connectedPlatforms": connected_platforms,
                 "eventIncToken": event_links["token"]
             },
-            "group": event_links["group"],
-            "label": event_links["label"],
+            "identity": event_links["identity"],
+            "identityType": event_links["identityType"],
+            "group": event_links["group"], # Deprecated
+            "label": event_links["label"], # Deprecated
             "environment": "test" if self.secret.startswith("sk_test") else "live",
             "expiresAt": int(time.time() * 1000) + (5 * 1000 * 60),
             "sessionId": self._get_session_id()['id'],
